@@ -1,0 +1,145 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    z-index: 3;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItems {
+    display: flex;
+    border-radius: 55px;
+    border-style: solid;
+    border: 1px solid white;
+    width: 50vw;
+    flex-direction: row;
+    gap: 100px;
+    list-style: none;
+    background: none;
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px 80px 10px 80px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: black;
+    opacity: 100;
+    z-index: 1;
+}
+
+.menuItems li:hover {
+    text-decoration: underline;
+}
+
+
+.navMenu {
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 63%;
+    border: 0.25px solid white;
+    width: 180px;
+    padding: 20px 0;
+    z-index: 1000;
+    gap: 10px;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .navMenu li {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .navMenu li:hover {
+    background-color: #1F1F1F;
+  }
+  
+  .navMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    width: 100%;
+  }
+
+.navMenuOpen {
+    display: flex;
+}
+
+.socialMenu {
+  background-color: black;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 63%;
+    border: 0.25px solid white;
+    width: 180px;
+    padding: 20px 0;
+    z-index: 1000;
+    gap: 10px;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .socialMenu li {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;              /* Ensures full width block behavior */
+  }
+  
+  .socialMenu li:hover {
+    background-color: #1F1F1F;
+  }
+  
+  .socialMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    width: 100%;
+  }
+
+.socialMenuOpen {
+    display: flex;
+}
+
+
+@media screen and (max-width: 490px) {        
+  .navbar {
+    z-index: 3;
+  }
+  
+  .menuItems {
+        display: flex;
+        flex-direction: row;
+        gap: 47px;
+        list-style: none;
+        background: black;
+        text-decoration: none;
+    }
+    
+    .menuItems a{
+        font-size: 25px;
+        color: rgb(251, 251, 251);
+        text-decoration: none;
+    }
+}

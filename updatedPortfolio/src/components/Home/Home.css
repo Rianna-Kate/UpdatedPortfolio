@@ -1,0 +1,207 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px; /* or whatever fits nicely */
+  flex-shrink: 0;
+}
+
+.headerSect {
+  position: relative;
+  top: 130px;
+  z-index: 1;
+}
+
+.homeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  gap: 60px; /* smaller and more manageable gap */
+}
+
+.homeHeader img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.headerSect h1 {
+  font-size: 55px;
+  margin: 0;
+  line-height: 1.2;
+}
+  
+.typeWriter {
+  font-weight: 600;
+  font-size: 55px;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 5.5rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  width: 900px;
+  max-width: 200%;
+}
+  
+
+.highlight {
+  color: #C51D34;
+}
+
+/* From Uiverse.io by ahmed150up2 */ 
+.socialCard {
+  display: flex;
+  position: relative;
+  height: 70px;
+  width: 270px;
+  margin: 0 auto;
+  gap: 30px;
+  background-color: black;
+  border-style: solid;
+  border-color: gray;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.socialCard svg {
+  position: relative;
+  display: flex;
+  width: 70%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.socialCard .social-link1,.socialCard .social-link2,.socialCard .social-link3,.socialCard .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.socialCard svg {
+  transform: scale(1);
+}
+
+.socialCard .social-link1:hover {
+  background-color: #71438a;
+  animation: bounce_613 0.4s linear;
+}
+
+.socialCard .social-link2:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.socialCard .social-link3:hover {
+  background-color: #03ae14;
+  animation: bounce_613 0.4s linear;
+}
+
+.socialCard .social-link4:hover {
+  background-color: #1d4292;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .homeHeader {
+    flex-direction: column;
+    align-items: center; /* Centers the entire content */
+    text-align: center;
+    position: relative; /* Prevent absolute issues */
+  }
+    
+  .title {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+    
+  .homeHeader h1 {
+    font-size: 50px;
+    margin-left: 0;  /* Remove leftover offset */
+    text-align: center;
+  }
+    
+  .typeWriter {
+    height: 4rem;
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+    
+  .homeHeader img {
+    height: 360px;
+    width: 360px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .homeHeader {
+    flex-direction: column;
+    align-items: center; /* Centers the entire content */
+    text-align: center;
+    position: relative; /* Prevent absolute issues */
+  }
+    
+  .title {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+    
+  .homeHeader h1 {
+    font-size: 35px;
+    margin-left: 0;  /* Remove leftover offset */
+    text-align: center;
+  }
+    
+  .typeWriter {
+    height: 2.8rem;
+    font-size: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+    
+  .homeHeader img {
+    height: 320px;
+    width: 320px;
+    margin-left: 0;
+  }
+}

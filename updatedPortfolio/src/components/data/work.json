@@ -1,0 +1,20 @@
+[
+    {
+        "jobTitle": "Computer Science Teaching Assistant",
+        "company": "University of West Florida",
+        "dateStart": "08/2023",
+        "dateEnd": "08/2024",
+        "duties": [
+            "Assisted students in understanding and implementing complex coding concepts in C++ and Java.",
+            "Conducted coding lab sessions, providing hands-on guidance and troubleshooting.",
+            "Developed, tested, and optimized programming assignments and projects."
+        ]
+    },
+    {
+        "jobTitle": "Software Engineer Trainee",
+        "company": "Mthree",
+        "dateStart": "02/2025",
+        "dateEnd": "Present",
+        "duties": []
+    }
+]

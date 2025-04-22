@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Airline Tracker",
+        "description": "A user-friendly web application utilizing AviationStackAPI to track real-time flights",
+        "skills": ["Java", "Spring Boot", "MySQL", "AviationStackAPI", "Svelte"],
+        "sourceURL": "https://github.com/theacademy/c411-final-team-projects-c411-team-4",
+        "imgSrc": "/FlightTrackerMap.JPG"
+    },
+    {
+        "title": "Dungeons & Dragons Spell Explorer",
+        "description": "A user-friendly web application with intuitive interface for Dungeons and Dragons (D&D) enthusiasts to seamlessly search and explore spell details.",
+        "skills": ["Java", "Spring Boot", "PostgreSQL", "HTML/CSS", "React"],
+        "sourceURL": "https://github.com/Rianna-Kate/DND-API",
+        "imgSrc": "/SpellSearch.JPG"
+    },
+    {
+        "title": "Big Data Cybersecurity Analysis Paper",
+        "description": "A joint-research project conducted on a large dataset containing 18.5+ million records of network intrusions labelled by the MITRE ATT&CK framework. Using Support Vector Machine (SVM) for multinomial classification on the raw dataset to evaluate its performance and support evidence for a related paper, comparing other machine learning algorithms and preprocessing techniques.",
+        "skills": ["Python", "Apache Spark", "Apache HDFS"],
+        "sourceURL": "https://docs.google.com/document/d/1knPhJPuG8OjsvlhzhnMKLBrjdsE6Qmf5ilQzPuXmNGY/edit?tab=t.0",
+        "imgSrc": "/ResearchPaper.JPG"
+    }
+]

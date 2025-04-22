@@ -1,0 +1,89 @@
+:root {
+  --size: 20px;
+  background-color: #0C0C0C;
+  color: white;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: hsl(0 0% 6%);
+}
+
+/* App container to wrap everything */
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Wrapper for the mask, with relative positioning */
+.mask-wrapper {
+  position: absolute;  /* Keep it behind content */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  z-index: 0;  /* Lower z-index to ensure it's behind */
+}
+
+/* Apply mask with image anchored to the top */
+.mask-wrapper .el {
+  width: 100vw;
+  height: 100vh;
+  background: conic-gradient(from 180deg at 50% 70%,hsla(0,0%,98%,1) 0deg,#eec32d 72.0000010728836deg,#ec4b4b 144.0000021457672deg,#709ab9 216.00000858306885deg,#4dffbf 288.0000042915344deg,hsla(0,0%,98%,1) 1turn); /* Color to match your design */
+
+  /* Combine radial-gradient and the external mask with anchored top position */
+  mask: radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% /
+    var(--size) var(--size),
+    url("../../assets/images/noise-mask.png") 256px 0 / 256px 256px;
+  mask-composite: intersect;
+
+  /* Animation to move the mask */
+  animation: flicker 20s infinite linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#about,
+#skills,
+#projects,
+#work {
+  scroll-margin-top: 130px;
+}
+
+/* Keyframes for flicker animation */
+@keyframes flicker {
+  0% {
+    mask-position: 50% 50%, 0 0;
+  }
+  50% {
+    mask-position: 50% 50%, 100% 0;
+  }
+  100% {
+    mask-position: 50% 50%, 0 0;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .mask-wrapper {
+    position: absolute;  /* Keep it behind content */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    z-index: 0;  /* Lower z-index to ensure it's behind */
+  }
+}

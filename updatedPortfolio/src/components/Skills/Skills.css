@@ -1,0 +1,131 @@
+.skillsSect {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.skillsSect h1 {
+    position: relative;
+    text-align: center;
+    color: #C51D34;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.skill {
+    text-decoration: underline;
+}
+
+.skillContent {
+    display: flex;
+    gap: 10px;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.skillContainer p {
+    font-weight: 800;
+}
+
+.skillContainer img {
+    width: 40px;
+    height: 40px;
+}
+
+.user-profile {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(
+      to bottom right,
+      #C51D34 0%,
+      rgba(46, 142, 255, 0) 30%
+    );
+    background-color: rgba(255, 46, 70, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+  
+.user-profile:hover,
+.user-profile:focus {
+    background-color: rgba(255, 46, 84, 0.7);
+    box-shadow: 0 0 10px rgba(255, 46, 67, 0.5);
+    outline: none;
+}
+  
+.user-profile-inner {
+    border-radius: 13px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+}
+  
+.user-profile-inner img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+  
+.user-profile-inner p {
+    font-size: 22px;
+    margin: 0;
+}
+
+@keyframes dropIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .user-profile {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+  
+  .drop-in {
+    animation: dropIn 0.4s ease-out forwards;
+  }
+  
+
+@media screen and (max-width: 1040px) {
+    .skillContainer {
+        max-width: 800px;
+    }
+
+    .skillsSect {
+        margin-top: 70px;
+    }
+
+    .skillsSect h1 {
+        margin-bottom: 60px;
+    }
+}
+  
